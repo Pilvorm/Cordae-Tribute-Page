@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-size: 1rem;
+    margin: 0;
+    background-color: #081B24;
+}
+
+/* HERO */
+#hero {
+    margin-bottom: 2vw;
+    align-items: center;
+    background: linear-gradient(56deg, rgba(219,222,205,1) 0%, rgba(225,231,219,1) 100%);
+}
+  
+#hero-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: center;
+}
+
+#hero-image {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    width: 68%;
+    max-height: 100%;
+    left: 100px;
+    /* border: 1px solid red; */
+}
+
+#title {
+    margin-left: 10vw;
+}
+
+#title > h1 {
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 6.5vw;
+    font-weight: 700;
+    letter-spacing: 1vw;
+}
+
+#title > p {
+    text-align: left;
+    font-size: 2.5vw;
+    font-family: 'Playfair Display', serif;
+}
+
+/* TRIBUTE INFO  */
+
+#tribute-info {
+    color: white;
+    font-family: 'Lora', sans-serif;
+    margin: 0 12vw 50px 12vw;
+}
+
+#tribute-info > h2 {
+    margin-top: 100px;
+    font-size: 30px;
+    margin-bottom: 2vw;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+    font-family: 'Lato', serif;
+}
+
+#description-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+    margin: 2vw 1vw 0px 1vw;
+}
+
+#desc-img {
+    object-fit: cover;
+    width: auto;
+    height: 50vw;
+    border-radius: 2px;
+}
+
+.text-format {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+    font-size: 100%;
+    font-weight: 500;
+}
+
+.text-format a {
+    text-decoration: none;
+    color: burlywood;
+    transition: 0.125s all ease-in-out;
+}
+
+.text-format a:hover {
+    text-decoration: underline;
+    transition: 0.125s all ease-in-out;
+}
+
+#quote {
+    margin-top: 10vh;
+}
+
+#quote > q{
+    color: burlywood;
+    font-family: 'Playfair Display', serif;
+    font-size: 150%;
+    font-weight: 500;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#quote > p{
+    margin-top: 1.2vw;
+    color: whitesmoke;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    font-size: 125%;
+}
+
+#quote {
+    align-self: end;
+}
+
+/* DISCOGRAPHY */
+
+#disco-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vw 1vw 0px 1vw;
+}
+
+.disco-img {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.disco-img > img {
+    width: 15vw;
+    border-radius: 2%;
+    transition: all 0.2s ease-in-out;
+}
+
+.disco-img > img:hover {
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+
+.center {
+    position: absolute;
+    font-size: 1.4vw;
+    font-weight: 700;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    font-family: 'Lato', serif;
+}
+
+.disco-img > img:hover~.center{
+    display: block;
+    pointer-events: none;
+}
+
+footer {
+    text-align: center;
+    margin: 50px 20px 20px 20px;
+}
+
+footer > p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+.fade-in {
+    animation: fadeIn 1.5s;
+    -webkit-animation: fadeIn 1.5s;
+    -moz-animation: fadeIn 1.5s;
+    -o-animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@media screen and (max-width: 768px) {
+    #hero-container {
+        grid-template-columns: 100%;
+    }
+
+    #title {
+        margin: 40px 0 0 0;
+    }
+
+    #title > h1 {
+        font-size: 7.5vw;
+        text-align: center;
+    }
+
+    #title > p {
+        font-size: 3.5vw;
+        text-align: center;
+    }
+
+    #hero-image {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+    }
+
+    #tribute-info > h2 {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    #description-container {
+        flex-direction: column;
+    }
+
+    #desc-img {
+        height: 42.5vh;
+    }
+
+    .text-format {
+        font-size: 1rem;
+    }
+
+    #quote {
+        margin-top: 5vh;
+    }
+
+    #quote > q {
+        font-size: 1.5rem;
+    }
+
+    #quote > p {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #disco-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    #disco-container > a:nth-child(1) {
+        margin-top: 25px;
+    }
+
+    .disco-img > img {
+        width: 70%;
+        border-radius: 2%;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .center {
+        font-size: 5vw;
+    }
+}
+
+/* .fade-in-left {
+    animation: fadeInLeft 1.5s;
+    -webkit-animation: fadeInLeft 1.5s;
+    -moz-animation: fadeInLeft 1.5s;
+    -o-animation: fadeInLeft 1.5s;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+    }
+}
+
+@-moz-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -moz-transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateX(0px);
+    }
+}
+
+@-o-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -o-transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        -o-transform: translateX(0px);
+    }
+} */
+
+.fade-in-left {
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+}
+
+.fade-in-left.appear {
+    opacity: 1;
+}
