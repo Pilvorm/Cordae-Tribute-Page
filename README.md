@@ -1,5 +1,8 @@
-# Cordae Tribute Page
+# Cordae Tribute Page - <span>[Live Preview](https://cordae-tribute-page.vercel.app/)</span>
 This is a tribute page about one of my favorite rappers, Cordae.
+
+![Tribute Page](https://user-images.githubusercontent.com/86703782/193222126-957515a0-4374-45be-b7b8-4f2eee50fea9.png)
+
 
 ## Backstory
 After completing the freeCodeCamp's [Responsive Web Design certification](https://www.freecodecamp.org/learn/responsive-web-design/), I decided to remake the required projects again - focusing on improving the design and aesthetics of the page while learning more effective approaches to building the layout of the page. The first required project was making a tribute page, hence I remade it about a young and talented rapper, [Cordae Amari Dunston](https://open.spotify.com/artist/0huGjMyP507tBCARyzSkrv).
@@ -19,4 +22,4 @@ Challenges:
 - I wanted to make the albums' title appear when hovering over the album covers. But hovering over the title itself caused the text to flicker. After a short search I came across [this](https://stackoverflow.com/questions/28840644/text-flickers-on-hover-css) and followed one person's answer to put **pointer-events: none;** on the hover state and it solved the problem.
 
 ## Go see the page!
-See the page [here](https://codepen.io/danielemerald/pen/dyJQrXV).
+See the page [here](https://cordae-tribute-page.vercel.app/).
