@@ -18,7 +18,7 @@ With contents taken from:
 - [Genius](https://genius.com/artists/Cordae)
 
 Challenges:
-- Initially, I made the 'About' section using grid and then flex, thinking that both really help when positioning elements, but then I realized that it created a large blank space on the image's side when resizing the screen to smaller sizes. After trying different approaches, simply using **float** solves the problem - allowing the description to wrap around the image and leaving way less blank space, and providing more comfort when reading.
+- Initially, I made the 'About' section using grid and then flex, thinking that both really help when positioning elements, but then I realized that it created a large blank space on the image's side when resizing the screen to smaller sizes. After trying different approaches, simply using **float** solves the problem - allowing the description to wrap around the image and leaving way less blank space while providing more comfort when reading.
 - I wanted to make the albums' title appear when hovering over the album covers. But hovering over the title itself caused the text to flicker. After a short search I came across [this](https://stackoverflow.com/questions/28840644/text-flickers-on-hover-css) and followed one person's answer to put **pointer-events: none;** on the hover state and it solved the problem.
 
 ## Go see the page!
