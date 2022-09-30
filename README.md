@@ -1,4 +1,4 @@
-# Cordae Tribute Page - <span>[Live Preview](https://cordae-tribute-page.vercel.app/)</span>
+# Cordae Tribute Page - [Live Preview](https://cordae-tribute-page.vercel.app/)
 This is a tribute page about one of my favorite rappers, Cordae.
 
 ![Tribute Page](https://user-images.githubusercontent.com/86703782/193222126-957515a0-4374-45be-b7b8-4f2eee50fea9.png)
